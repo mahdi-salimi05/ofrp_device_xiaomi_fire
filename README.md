@@ -74,7 +74,7 @@ $~$
 2. In the root folder of the fetched repo, clone the device tree:
 
 ```bash
-git clone https://github.com/AntarticShaurant/android_device_xiaomi_fire.git device/xiaomi/fire
+git clone https://github.com/redmi-fire-devs/twrp_device_xiaomi_fire.git device/xiaomi/fire
 ```
 
 3. To build:

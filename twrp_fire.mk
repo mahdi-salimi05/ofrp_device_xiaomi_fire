@@ -16,6 +16,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from fire device
 $(call inherit-product, device/xiaomi/fire/device.mk)
 
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, device/xiaomi/fire/fox_fire.mk)
+
 PRODUCT_DEVICE := fire
 PRODUCT_NAME := twrp_fire
 PRODUCT_BRAND := Redmi

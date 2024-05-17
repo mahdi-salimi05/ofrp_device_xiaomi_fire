@@ -42,6 +42,7 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;/super;"
 export FOX_DELETE_AROMAFM=1
 
 # Add some extras
+export OF_ENABLE_LPTOOLS=1
 export FOX_USE_BASH_SHELL=1
 export FOX_USE_NANO_EDITOR=1
 export OF_NO_SPLASH_CHANGE=1

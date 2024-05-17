@@ -1,4 +1,4 @@
-export FOX_USE_SPECIFIC_MAGISK_ZIP=./device/xiaomi/fire/Magisk/Magisk-v27.0.zip
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk-v27.0.zip
 export OF_FL_PATH1="/sys/class/leds/torch-light0"
 
  # Some about us

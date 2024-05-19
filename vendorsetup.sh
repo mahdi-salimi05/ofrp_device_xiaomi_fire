@@ -1,5 +1,6 @@
 export FOX_USE_SPECIFIC_MAGISK_ZIP=/home/runner/work/Action-OFRP-Builder/Action-OFRP-Builder/workspace/fox_12.1/device/xiaomi/fire/Magisk/Magisk-v27.0.zip
 export OF_FL_PATH1="/sys/class/leds/torch-light0"
+export OF_FLASHLIGHT_ENABLE=0
 
  # Some about us
 export FOX_VERSION="R12.1"

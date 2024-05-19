@@ -109,7 +109,7 @@ $~$
 
 ## How to install "permanently"
 
-1. download orangefox image [here](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
+1. download orangefox image [here](https://github.com/mahdi-salimi05/OrangeFox-Action-Builder/releases) [(old version is here)](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
 
 2. dump your boot image with [mtkclient](https://github.com/bkerler/mtkclient):
 

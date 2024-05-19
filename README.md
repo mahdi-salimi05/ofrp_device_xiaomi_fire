@@ -69,30 +69,67 @@ $~$
 
 ## How to build
 
-1. Set up the build environment following the instructions [here](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/blob/twrp-12.1/README.md#getting-started)
+1. Set up the build environment following the instructions [here](https://wiki.orangefox.tech/en/dev/building#h-0-prepare-the-build-environment-debian-based-linux-distros)
 
-2. In the root folder of the fetched repo, clone the device tree:
+2. In the root folder of the fetched [repo](https://wiki.orangefox.tech/en/dev/building#h-1-sync-orangefox-sources-and-minimal-manifest), clone the device tree:
 
 ```bash
-git clone https://github.com/AntarticShaurant/android_device_xiaomi_fire.git device/xiaomi/fire
+git clone https://github.com/mahdi-salimi05/ofrp_device_xiaomi_fire.git device/xiaomi/fire
 ```
 
 3. To build:
 
 ```bash
-export ALLOW_MISSING_DEPENDENCIES=true
-. build/envsetup.sh
-lunch twrp_fire-eng
-mka bootimage
+cd ~/OrangeFox # (or whichever directory has the synced manifest)
+  /bin/bash # if your Linux shell isn't bash
+  export ALLOW_MISSING_DEPENDENCIES=true
+  export FOX_BUILD_DEVICE=<device>
+  export LC_ALL="C"
+
+# for all brances
+  source build/envsetup.sh
+
+# for branches lower than 11.0
+  lunch omni_<device>-eng && mka recoveryimage
+
+# for branches lower than 11.0, with A/B partitioning
+  lunch omni_<device>-eng && mka bootimage
+
+# for the 11.0 (or higher) branch
+  lunch twrp_<device>-eng && mka adbd recoveryimage
+
+# for the 11.0 (or higher) branch, with A/B partitioning
+  lunch twrp_<device>-eng && mka adbd bootimage
+
+# for the 12.1 (or higher) branch, vendor_boot-as-recovery builds [this is highly experimental and unsupported!]
+  lunch twrp_<device>-eng && mka adbd vendorbootimage
 ```
 
 $~$
 
-## How to install
+## How to install "permanently"
 
-download orangefox image [here](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
+1. download orangefox image [here](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
 
-first dump your boot image with mtkclient and flash orangefox image to your boot partition; and then boot to recovery and flash your dumped boot image on both slots (this will remove OF recovery form your device; you need to reflash orange fox from menu>Flash current OF).
+2. dump your boot image with [mtkclient](https://github.com/bkerler/mtkclient):
+
+```bash
+python3 mtk r boot boot.img
+```
+
+3. flash [orangefox image](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases) to your boot_a "or boot" partition
+
+```bash
+fastboot flash boot OrangeFox-R12.1-Unofficial-fire.img
+```
+
+4. reboot to recovery
+
+```bash
+fastboot reboot recovery
+```
+
+5. Once booted, put your stock boot image in Internalstorage , MicroSdcard or Usb-Otg then Flash stock boot image in boot partition and tick (Flash to both slots) (this will remove OF recovery form your device; you need to reflash orange fox from menu>Flash current OF).
 after that it is better to flash OF.zip file 
 
 ## Device picture

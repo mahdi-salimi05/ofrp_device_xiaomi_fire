@@ -4,11 +4,6 @@ The Xiaomi Redmi 12 (codenamed _"fire"_) is an entry-level smartphone from Xiaom
 
 It was announced and released in June 2023.
 
-download [here](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
-
-first dump your boot image with mtkclient and flash that recovery image to your boot partition; and then boot to recovery and flash your dumped boot image on both slots (this will remove OF recovery form your device; you need to reflash orange fox from menu>Flash current OF).
-after that it is better to flash OF.zip file 
-
 ## Device specifications
 
 | Feature                        | Specification                                                     |
@@ -92,6 +87,13 @@ mka bootimage
 ```
 
 $~$
+
+## How to install
+
+download orangefox image [here](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
+
+first dump your boot image with mtkclient and flash orangefox image to your boot partition; and then boot to recovery and flash your dumped boot image on both slots (this will remove OF recovery form your device; you need to reflash orange fox from menu>Flash current OF).
+after that it is better to flash OF.zip file 
 
 ## Device picture
 

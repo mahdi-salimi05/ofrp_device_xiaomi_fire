@@ -1,4 +1,4 @@
-export FOX_USE_SPECIFIC_MAGISK_ZIP=/home/runner/work/OrangeFox-Action-Builder/OrangeFox-Action-Builder/OrangeFox/fox_12.1/device/xiaomi/fire/Magisk/Magisk-v27.0.zip
+export FOX_USE_SPECIFIC_MAGISK_ZIP=/home/runner/work/OrangeFox-Action-Builder/OrangeFox-Action-Builder/OrangeFox/fox_12.1/device/xiaomi/fire/Magisk/Magisk-v28.0.zip
 export OF_FL_PATH1="/sys/class/leds/torch-light0"
 #export OF_FLASHLIGHT_ENABLE=1
 

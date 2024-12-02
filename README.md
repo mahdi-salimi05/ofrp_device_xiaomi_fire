@@ -109,7 +109,7 @@ $~$
 
 ## How to install "permanently"
 
-1. download orangefox image [here](https://github.com/mahdi-salimi05/OrangeFox-Action-Builder/releases) [(old version is here)](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases).
+1. download orangefox image [here](https://github.com/mahdi-salimi05/OrangeFox-Action-Builder/releases).
 
 2. dump your boot image with [mtkclient](https://github.com/bkerler/mtkclient):
 
@@ -117,7 +117,7 @@ $~$
 python3 mtk r boot boot.img
 ```
 
-3. flash [orangefox image](https://github.com/mahdi-salimi05/Action-OFRP-Builder/releases) to your boot_a "or boot" partition
+3. flash [orangefox image](https://github.com/mahdi-salimi05/OrangeFox-Action-Builder/releases) to your boot_a "or boot" partition
 
 ```bash
 fastboot flash boot OrangeFox-R12.1-Unofficial-fire.img

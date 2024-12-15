@@ -131,7 +131,9 @@ fastboot reboot recovery
 
 5. Once booted, put your stock boot image in Internalstorage , MicroSdcard or Usb-Otg then Flash stock boot image in boot partition and tick (Flash to both slots) (this will remove OF recovery form your device; you need to reflash orange fox from menu>Flash current OF).
 after that it is better to flash OF.zip file 
+## Credits
 
+AntarcticShaurant TWRP Device tree: https://github.com/redmi-fire-devs/twrp_device_xiaomi_fire
 ## Device picture
 
 ![xiaomi-redmi-12-1](https://github.com/AntarticShaurant/android_device_xiaomi_fire/assets/109678650/bd593af4-92d4-4d5a-872d-e21bbb699a89)
